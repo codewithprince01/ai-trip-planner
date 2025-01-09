@@ -3,10 +3,11 @@ import { doc, getDoc } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "sonner";
-import InfoSection from "../Components/infoSection";
 import Hotel from "../Components/Hotel";
 import PlacesToVisit from "../Components/PlacesToVisit";
 import Footer from "../Components/Footer";
+import InfoSection from "../Components/InfoSection";
+
 
 function ViewTrip() {
   const { tripId } = useParams();
