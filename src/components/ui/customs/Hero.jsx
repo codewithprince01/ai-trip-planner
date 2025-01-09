@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 export default function HeroSection() {
 
   const images = [
-    "/images/road.jpg",
-    "/images/2.webp",
-    "/images/3.avif",
-    "/images/4.avif"
+    "images/road.jpg",
+    "images/2.webp",
+    "images/3.avif",
+    "images/4.avif"
   ];
 
   return (
