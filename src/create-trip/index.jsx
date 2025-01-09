@@ -225,7 +225,7 @@ export default function CreateTrip() {
               <div className="flex items-center mb-6">
                 <a href="/">
                   <img
-                    src="/images/logo.png"
+                    src="images/logo.png"
                     alt="AI Trip Planner Logo"
                     className="w-16 h-16 mr-4 cursor-pointer hover:scale-105 transition-transform ease-in-out"
                   />
