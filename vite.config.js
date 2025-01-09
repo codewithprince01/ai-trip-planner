@@ -5,12 +5,16 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist',
+    outDir: 'dist', // Output folder
+    assetsDir: 'assets', // Folder for static assets
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './src'), // Correctly resolve aliases
     },
   },
-  base: '/', // Ensure the base is set to the root
+  server: {
+    open: true, // Open the app in the browser
+  },
+  base: '/', // Ensure this matches your deployment root (default `/`)
 });
