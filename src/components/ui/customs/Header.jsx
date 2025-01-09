@@ -52,7 +52,7 @@ export default function Header() {
       <div className="flex items-center">
         <a href="/">
           <img
-            src="public/logo.png"
+            src="/images/logo.png"
             alt="AI Trip Planner Logo"
             className="w-16 h-16 mr-2 cursor-pointer hover:scale-105 transition-transform"
           />

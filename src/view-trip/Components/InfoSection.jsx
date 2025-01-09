@@ -5,7 +5,7 @@ function InfoSection({ trip }) {
   return (
     <div className="bg-gradient-to-r from-teal-300 via-teal-400 to-teal-500 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
       <img
-        src="/aeroplane.avif"
+        src="/images/aeroplane.avif"
         className="h-[450px] w-full object-cover rounded-xl mb-6 transition-all transform hover:scale-105"
         alt="Trip"
       />

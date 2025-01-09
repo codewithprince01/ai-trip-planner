@@ -16,7 +16,7 @@ function Hotel({ trip }) {
             <div className="bg-white rounded-lg shadow-xl hover:shadow-2xl overflow-hidden max-w-sm w-full">
               <div className="relative w-full h-56">
                 <img
-                  src="/aeroplane.avif" // You should replace this with a hotel image URL if available
+                  src="/images/aeroplane.avif" // You should replace this with a hotel image URL if available
                   alt={hotel.name}
                   className="w-full h-full object-cover rounded-t-lg"
                 />

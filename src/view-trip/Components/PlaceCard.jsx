@@ -10,7 +10,7 @@ function PlaceCard({ place }) {
     >
       <div className="border rounded-xl p-5 mt-5 flex gap-5 shadow-sm bg-white hover:border-teal-500 cursor-pointer">
         <img 
-          src='/aeroplane.avif' 
+          src='/images/aeroplane.avif' 
           alt={place.name}
           className='w-[150px] h-[150px] rounded-xl object-cover transition-transform duration-300 ease-in-out'
         />
