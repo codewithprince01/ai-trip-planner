@@ -4,8 +4,8 @@ import PlaceCard from "./PlaceCard";
 function PlacesToVisit({ trip }) {
   return (
     <div className="my-12">
-      <h2 className="font-extrabold text-4xl text-teal-800 mb-8 text-center">
-        🌍 Places To Visit 🌍
+       <h2 className="font-extrabold text-3xl text-teal-800 mb-8 text-center">
+      Places To Visit 🌍
       </h2>
       <div>
         {Array.isArray(trip?.tripData?.itinerary) ? (

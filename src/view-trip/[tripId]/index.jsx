@@ -8,7 +8,6 @@ import PlacesToVisit from "../Components/PlacesToVisit";
 import Footer from "../Components/Footer";
 import InfoSection from "../Components/InfoSection";
 
-
 function ViewTrip() {
   const { tripId } = useParams();
   const [trip, setTrip] = useState([]);
@@ -31,25 +30,28 @@ function ViewTrip() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-teal-50 via-teal-100 to-teal-200 p-10 md:px-20 lg:px-44 xl:px-56">
+    <div className="min-h-screen bg-gradient-to-r from-teal-50 via-teal-100 to-teal-200 p-4 sm:p-8 md:px-16 lg:px-32 xl:px-48">
       <div className="text-teal-900 text-center">
-        <h1 className="font-bold text-4xl mb-6 text-teal-800">
-          {trip?.tripTitle}
-        </h1>
 
-        <div className="p-2 mb-8">
+        {/* Trip Info Section */}
+        <div className="p-2 mb-6 sm:mb-8 lg:mb-10">
           <InfoSection trip={trip} />
         </div>
 
-        <div className=" p-6  mb-8">
+        {/* Hotel Section */}
+        <div className="p-4 sm:p-6 mb-6 sm:mb-8 lg:mb-10">
           <Hotel trip={trip} />
         </div>
 
-        <div className="p-6  mb-8">
+        {/* Places to Visit Section */}
+        <div className="p-4 sm:p-6 mb-6 sm:mb-8 lg:mb-10">
           <PlacesToVisit trip={trip} />
         </div>
 
-        <Footer trip={trip} />
+        {/* Footer Section */}
+        <div className="p-4 sm:p-6">
+          <Footer trip={trip} />
+        </div>
       </div>
     </div>
   );

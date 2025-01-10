@@ -6,12 +6,12 @@ function InfoSection({ trip }) {
     <div className="bg-gradient-to-r from-teal-300 via-teal-400 to-teal-500 p-8 rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
       <img
         src="/images/aeroplane.avif"
-        className="h-[450px] w-full object-cover rounded-xl mb-6 transition-all transform hover:scale-105"
+        className="h-[300px] sm:h-[450px] w-full object-cover rounded-xl mb-6 transition-all transform hover:scale-105"
         alt="Trip"
       />
 
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex flex-col gap-5 max-w-xl">
+        <div className="flex flex-col gap-5 max-w-xl w-full">
           <h2 className="font-bold text-3xl text-teal-800">
             {trip?.userSelection?.location}
           </h2>
